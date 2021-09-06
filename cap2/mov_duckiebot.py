@@ -61,11 +61,17 @@ while True:
 
     # Esto es avanzar recto hacia adelante al apretar la tecla w
     if key == ord('w'):
-        action = np.array([0.44, 0.0])
-
-    ### AGREGAR MÁS COMPORTAMIENTOS ###
-
-
+        action = np.array([0.70, 0.0])
+    # izq =a
+    if key == ord('a'):
+        action = np.array([0.40,0.90])
+    # der=d
+    if key == ord('d'):
+        action = np.array([0.40,-0.90])
+    # atrás = s
+    if key == ord('s'):
+        action = np.array([-0.50,0.0])
+   
 
     # Se ejecuta la acción definida anteriormente y se retorna la observación (obs),
     # la evaluación (reward), etc
